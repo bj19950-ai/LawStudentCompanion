@@ -1,0 +1,6 @@
+{
+  "name": "رفيق طالب الحقوق",
+  "description": "تطبيق متكامل لطلاب كليات الحقوق والقانون: متابعة الحصص القادمة، مراجعة المحاضرات، الجدول الأسبوعي، ملخصات المواد والدروس المسيرة، ومساعد ذكي قانوني.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

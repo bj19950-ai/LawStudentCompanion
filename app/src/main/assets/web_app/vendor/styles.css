@@ -1,0 +1,62 @@
+:root {
+  --color-navy: #1A237E;
+  --color-navy-dark: #0D1442;
+  --color-navy-light: #283593;
+}
+
+body {
+  font-family: 'Cairo', system-ui, -apple-system, 'Segoe UI', Tahoma, Arial, sans-serif;
+  background-color: #F5F7FA;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Global Support */
+html.dark body {
+  background-color: #0F172A !important;
+  color: #F1F5F9 !important;
+}
+html.dark .bg-white {
+  background-color: #1E293B !important;
+  color: #F1F5F9 !important;
+}
+html.dark .bg-gray-50 {
+  background-color: #0F172A !important;
+  color: #CBD5E1 !important;
+}
+html.dark .text-gray-800, html.dark .text-gray-900, html.dark .text-gray-700 {
+  color: #F8FAFC !important;
+}
+html.dark .text-gray-600, html.dark .text-gray-500 {
+  color: #94A3B8 !important;
+}
+html.dark .border-gray-100, html.dark .border-gray-200 {
+  border-color: #334155 !important;
+}
+html.dark input, html.dark select, html.dark textarea {
+  background-color: #0F172A !important;
+  color: #F1F5F9 !important;
+  border-color: #334155 !important;
+}
+
+.custom-scroll::-webkit-scrollbar { display: none; }
+.custom-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes pulse-subtle { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+.animate-pulse-subtle { animation: pulse-subtle 1.5s infinite; }
+
+/* 3D Flip Card Styles */
+.perspective-1000 { perspective: 1000px; }
+.transform-style-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.rotate-y-180 { transform: rotateY(180deg); }
+.flipped { transform: rotateY(180deg); }
+
+.pdf-page-canvas {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto !important;
+  background: white;
+}
